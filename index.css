@@ -1,3 +1,73 @@
-#heading{
-    color:red
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo {
+    width: 170px;
+}
+.nav-items > ul {
+    font-size: 22px;
+    display: flex;
+    list-style-type: none;
+}
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between the cards */
+    justify-content: center; /* Center align the cards */
+    padding: 20px; /* Add padding to the container */
+}
+.res-card {
+    padding: 10px;
+    margin: 5px; /* Adds 5px space between each card */
+    width: 200px;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth hover effect */
+}
+.res-card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+.search {
+    padding: 10px;
+}
+.res-logo {
+    width: 100%;
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+.filter-btn {
+    background-color: #ff4500; /* Bright orange color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding for a nice size */
+    margin-top: 10px;
+    font-size: 16px; /* Font size for text */
+    font-weight: bold; /* Make the text bold */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Make the cursor a pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+}
+
+.filter-btn:hover {
+    background-color: #e63900; /* Darker shade of orange on hover */
+    transform: translateY(-2px); /* Slight upward lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.filter-btn:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
 }
